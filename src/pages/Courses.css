@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap');
+
+.courses-page {
+  background: #f5efe6;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* TITLE */
+.title {
+  font-family: "Cinzel", serif;
+  font-size: 32px;
+  color: #6b0f1a;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* GRID */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* CARD */
+.course-card {
+  background: #fff8f0;
+  border-radius: 16px;
+  padding: 25px;
+
+  border: 3px solid #6b0f1a;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+  transition: 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+}
+
+/* TEXT */
+.course-card h2 {
+  font-family: "Cinzel", serif;
+  color: #6b0f1a;
+  margin-bottom: 5px;
+}
+
+.course-card h4 {
+  color: #8b5e3c;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.course-card p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* DURATION */
+.duration {
+  font-weight: bold;
+  color: #6b0f1a;
+}
+
+/* BUTTON */
+.course-card button {
+  margin-top: 10px;
+  padding: 10px 18px;
+
+  background: #6b0f1a;
+  color: gold;
+
+  border: none;
+  border-radius: 20px;
+
+  cursor: pointer;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.course-card button:hover {
+  background: #8b1e2d;
+}
+
+/* ================= WHO SECTION ================= */
+
+.who-section {
+  margin-top: 60px;
+  background: #fff8f0;
+  padding: 30px;
+  border-radius: 16px;
+  border-top: 5px solid gold;
+}
+
+.who-section h2 {
+  font-family: "Cinzel", serif;
+  color: #6b0f1a;
+  margin-bottom: 25px;
+}
+
+/* GRID */
+.who-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.who-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #6b0f1a;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.who-card h4 {
+  color: #6b0f1a;
+  margin-bottom: 10px;
+}
+
+.who-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .who-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .courses-grid,
+  .who-grid {
+    grid-template-columns: 1fr;
+  }
+}

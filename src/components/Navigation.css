@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.nav-header {
+  width: 100%;
+  height: 95px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+
+  background: linear-gradient(
+    90deg,
+    #45000d,
+    #6b0f1a,
+    #45000d
+  );
+
+  border-bottom: 2px solid rgba(212, 175, 55, 0.25);
+
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* BRAND */
+
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  width: 80px;
+  height: 80px;
+
+  object-fit: contain;
+
+  filter: drop-shadow(
+    0 0 12px rgba(212, 175, 55, 0.4)
+  );
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-text h1 {
+  margin: 0;
+
+  color: #d4af37;
+
+  font-family: "Cinzel", serif;
+  font-size: 28px;
+  font-weight: 700;
+
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.brand-text p {
+  margin-top: 4px;
+
+  color: #f6e7b4;
+
+  font-size: 11px;
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+/* NAVIGATION */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  position: relative;
+
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d4af37;
+}
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+  height: 2px;
+
+  background: #d4af37;
+
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* BUTTON */
+
+.enroll-btn {
+  background: linear-gradient(
+    135deg,
+    #d4af37,
+    #f3d47b
+  );
+
+  color: black;
+
+  border: none;
+  border-radius: 30px;
+
+  padding: 12px 24px;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.enroll-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.5);
+}
+
+/* MOBILE */
+
+@media (max-width: 1200px) {
+
+  .nav-header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .logo-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .brand-text h1 {
+    font-size: 22px;
+  }
+}

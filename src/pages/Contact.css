@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+
+.contact-page{
+  background:#f8f4ee;
+  min-height:100vh;
+  padding:90px 20px;
+}
+
+.contact-container{
+  max-width:1200px;
+  margin:auto;
+  text-align:center;
+}
+
+/* BADGE */
+
+.contact-badge{
+  display:inline-block;
+
+  background:rgba(212,175,55,.12);
+  color:#d4af37;
+
+  border:1px solid rgba(212,175,55,.3);
+
+  padding:10px 22px;
+  border-radius:40px;
+
+  letter-spacing:1px;
+  font-size:14px;
+
+  margin-bottom:25px;
+}
+
+/* TITLE */
+
+.contact-title{
+  font-family:"Cinzel", serif;
+  font-size:56px;
+  color:#6b0f1a;
+
+  margin-bottom:20px;
+}
+
+.contact-subtitle{
+  max-width:800px;
+  margin:auto;
+
+  color:#8b6508;
+
+  font-size:24px;
+  line-height:1.7;
+
+  font-family:"Cormorant Garamond", serif;
+
+  margin-bottom:60px;
+}
+
+/* CONTACT BOX */
+
+.contact-card{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+
+  gap:25px;
+
+  background:white;
+
+  padding:50px;
+
+  border-radius:24px;
+
+  box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+  margin-bottom:60px;
+}
+
+/* ITEM */
+
+.contact-item{
+  padding:20px;
+
+  border-radius:18px;
+
+  transition:.3s ease;
+}
+
+.contact-item:hover{
+  transform:translateY(-8px);
+
+  background:#fffaf0;
+}
+
+.contact-icon{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.contact-item h3{
+  font-family:"Cinzel", serif;
+  color:#6b0f1a;
+
+  margin-bottom:12px;
+}
+
+.contact-item p{
+  color:#555;
+  line-height:1.8;
+}
+
+/* LINKS */
+
+.contact-link{
+  color:#6b0f1a;
+
+  text-decoration:none;
+
+  font-weight:600;
+
+  line-height:2;
+}
+
+.contact-link:hover{
+  color:#d4af37;
+  text-decoration:underline;
+}
+
+/* COMING SOON */
+
+.contact-coming{
+  background:
+    linear-gradient(
+      135deg,
+      #6b0f1a,
+      #8b1e2d
+    );
+
+  color:white;
+
+  padding:60px;
+
+  border-radius:24px;
+}
+
+.contact-coming h2{
+  font-family:"Cinzel", serif;
+
+  margin-bottom:20px;
+}
+
+.contact-coming p{
+  max-width:700px;
+  margin:15px auto;
+
+  line-height:1.8;
+}
+
+.coming-tag{
+  display:inline-block;
+
+  margin-top:25px;
+
+  background:gold;
+  color:black;
+
+  padding:12px 25px;
+
+  border-radius:40px;
+
+  font-weight:bold;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .contact-title{
+    font-size:38px;
+  }
+
+  .contact-subtitle{
+    font-size:20px;
+  }
+
+  .contact-card{
+    grid-template-columns:1fr;
+    padding:30px;
+  }
+
+  .contact-coming{
+    padding:35px 25px;
+  }
+}

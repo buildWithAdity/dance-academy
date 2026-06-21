@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+
+*{
+  box-sizing:border-box;
+}
+
+.header{
+  height:120px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:0 40px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #3d0008 0%,
+      #6b0f1a 50%,
+      #2c0000 100%
+    );
+
+  border-bottom:1px solid rgba(212,175,55,.25);
+
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+/* BRAND */
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:18px;
+
+  min-width:420px;
+}
+
+.logo-img{
+  width:105px;
+  height:105px;
+
+  object-fit:contain;
+
+  transition:.4s ease;
+
+  filter:
+    drop-shadow(0 0 12px rgba(212,175,55,.35));
+}
+
+.brand:hover .logo-img{
+  transform:scale(1.06);
+
+  filter:
+    drop-shadow(0 0 25px rgba(212,175,55,.65));
+}
+
+.brand-text h1{
+  margin:0;
+
+  font-family:"Cinzel", serif;
+  font-size:32px;
+
+  line-height:1;
+
+  color:#d4af37;
+  letter-spacing:2px;
+}
+
+.brand-text h2{
+  margin:2px 0;
+
+  font-family:"Cinzel", serif;
+  font-size:14px;
+
+  color:#f5e7b0;
+
+  letter-spacing:4px;
+  font-weight:500;
+}
+
+.brand-text p{
+  margin:0;
+
+  font-family:"Cormorant Garamond", serif;
+  font-size:15px;
+
+  color:#d8caa0;
+  font-style:italic;
+}
+
+/* NAVIGATION */
+
+.nav{
+  display:flex;
+  align-items:center;
+  gap:26px;
+}
+
+.nav a{
+  text-decoration:none;
+
+  color:white;
+
+  font-family:"Cinzel", serif;
+  font-size:14px;
+  letter-spacing:1px;
+
+  position:relative;
+
+  transition:.35s ease;
+}
+
+.nav a::before{
+  content:"";
+
+  position:absolute;
+
+  left:50%;
+  bottom:-8px;
+
+  width:0;
+  height:2px;
+
+  background:#d4af37;
+
+  transform:translateX(-50%);
+  transition:.35s ease;
+}
+
+.nav a:hover{
+  color:#d4af37;
+  transform:translateY(-2px);
+}
+
+.nav a:hover::before{
+  width:100%;
+}
+
+/* BUTTON */
+
+.enroll-btn{
+  border:none;
+
+  padding:12px 24px;
+
+  border-radius:40px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #d4af37,
+      #f8e39a
+    );
+
+  color:#111;
+
+  font-family:"Cinzel", serif;
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:.35s ease;
+
+  box-shadow:
+    0 6px 20px rgba(212,175,55,.25);
+}
+
+.enroll-btn:hover{
+  transform:
+    translateY(-3px)
+    scale(1.03);
+
+  box-shadow:
+    0 14px 30px rgba(212,175,55,.45);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+  .header{
+    flex-direction:column;
+    height:auto;
+
+    padding:20px;
+    gap:18px;
+  }
+
+  .brand{
+    min-width:auto;
+  }
+
+  .nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+  }
+}

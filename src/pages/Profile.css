@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+
+.profile-container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8f3eb,
+      #f5efe6
+    );
+}
+
+/* CARD */
+
+.profile-card {
+  width: 100%;
+  max-width: 950px;
+
+  display: flex;
+  gap: 40px;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 24px;
+
+  border: 1px solid rgba(212, 175, 55, 0.35);
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* LEFT */
+
+.profile-left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-left img {
+  width: 190px;
+  height: 190px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 5px solid #d4af37;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.15);
+}
+
+.placeholder {
+  width: 190px;
+  height: 190px;
+
+  border-radius: 50%;
+
+  background: #ececec;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #666;
+}
+
+/* RIGHT */
+
+.profile-right {
+  flex: 1;
+}
+
+.status-badge {
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  background: rgba(212,175,55,0.12);
+
+  color: #8b6508;
+
+  border-radius: 30px;
+
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+.profile-right h1 {
+  margin-bottom: 20px;
+
+  color: #6b0f1a;
+
+  font-family: "Cinzel", serif;
+
+  font-size: 36px;
+}
+
+.profile-right p {
+  margin: 10px 0;
+
+  color: #333;
+
+  font-size: 16px;
+}
+
+.divider {
+  height: 1px;
+
+  background: #e5d4a4;
+
+  margin: 25px 0;
+}
+
+/* BUTTON */
+
+.fee-dropdown button {
+  background:
+    linear-gradient(
+      135deg,
+      #6b0f1a,
+      #8c1d2f
+    );
+
+  color: gold;
+
+  border: none;
+
+  padding: 12px 22px;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.fee-dropdown button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 20px rgba(107,15,26,0.25);
+}
+
+/* INFO BOX */
+
+.fee-box {
+  margin-top: 15px;
+
+  padding: 20px;
+
+  background: #fffdf8;
+
+  border-radius: 15px;
+
+  border-left: 5px solid #d4af37;
+
+  animation: fadeIn 0.3s ease;
+}
+
+.fee-box h3 {
+  color: #6b0f1a;
+  margin-bottom: 10px;
+}
+
+.fee-box p {
+  line-height: 1.8;
+}
+
+.gurukul-note {
+  margin-top: 15px;
+
+  color: #8b6508;
+
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-left {
+    justify-content: center;
+  }
+
+  .profile-right h1 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,51 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f7f3ef;
+}
+
+.signup-box {
+  background: white;
+  padding: 40px;
+  width: 420px;
+  border-radius: 16px;
+  border: 2px solid #8b5e3c;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.academy-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3b1f0f;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  color: #6b4f3a;
+}
+
+.signup-box label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.signup-box input,
+.signup-box select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.signup-box button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #8b5e3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
