@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
+
+:root {
+  --maroon: #5a0f18;
+  --gold: #c8a247;
+  --text: #2b211b;
+  --bg: #faf6f1;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* PAGE */
+.gallery {
+  overflow-x: hidden;
+}
+
+/* HERO FIX (IMPORTANT) */
+.hero {
+  position: relative;
+  height: 100vh;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center; /* FIX CUT HEAD */
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0,0,0,0.45);
+  color: white;
+}
+
+.hero-badge {
+  font-family: "Cinzel";
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 50px;
+}
+
+.hero h1 {
+  font-family: "Cinzel";
+  font-size: 70px;
+  margin-top: 20px;
+}
+
+.line {
+  width: 80px;
+  height: 2px;
+  background: var(--gold);
+  margin: 20px 0;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 600px;
+}
+
+/* INTRO */
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 120px auto;
+}
+
+.tag {
+  font-family: "Cinzel";
+  font-size: 12px;
+  color: var(--gold);
+}
+
+.intro h2 {
+  font-size: 48px;
+  color: var(--maroon);
+}
+
+/* FEATURED */
+.featured,
+.legacy {
+  width: 1100px;
+  max-width: 92%;
+  margin: 120px auto;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.imgBox {
+  flex: 1;
+}
+
+.imgBox img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.text {
+  flex: 1;
+}
+
+.text h2 {
+  font-size: 44px;
+  color: var(--maroon);
+  font-family: "Cinzel";
+}
+
+.gridSection {
+  width: 1100px;
+  max-width: 92%;
+  margin: 120px auto;
+}
+
+/* IMPORTANT FIX */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+/* UNIFORM CARDS */
+.card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* 🔥 FIX ALL IMAGE SIZE */
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.cardText {
+  padding: 20px;
+  text-align: center;
+}
+
+.cardText h3 {
+  font-family: "Cinzel";
+  color: var(--maroon);
+}
+
+.cardText span {
+  color: var(--gold);
+  font-size: 12px;
+}

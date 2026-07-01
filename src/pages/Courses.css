@@ -1,149 +1,683 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
 
-.courses-page {
-  background: #f5efe6;
-  padding: 50px 20px;
-  text-align: center;
+/* ===============================
+   GLOBAL
+================================= */
+
+.courses-page{
+    background:#f8f4ee;
+    padding:90px 20px;
+    color:#3d2b1f;
+    overflow:hidden;
 }
 
-/* TITLE */
-.title {
-  font-family: "Cinzel", serif;
-  font-size: 32px;
-  color: #6b0f1a;
-  margin-bottom: 40px;
-  letter-spacing: 1px;
+section{
+    margin-bottom:90px;
 }
 
-/* GRID */
-.courses-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-
-  max-width: 1100px;
-  margin: auto;
+.section-heading{
+    text-align:center;
+    margin-bottom:55px;
 }
 
-/* CARD */
-.course-card {
-  background: #fff8f0;
-  border-radius: 16px;
-  padding: 25px;
-
-  border: 3px solid #6b0f1a;
-
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-
-  transition: 0.3s;
+.section-heading h2{
+    font-family:"Cinzel",serif;
+    font-size:40px;
+    color:#6b0f1a;
+    letter-spacing:1px;
+    margin-bottom:18px;
 }
 
-.course-card:hover {
-  transform: translateY(-8px);
+.gold-line{
+    width:90px;
+    height:3px;
+    background:#d4af37;
+    margin:auto;
+    border-radius:10px;
 }
 
-/* TEXT */
-.course-card h2 {
-  font-family: "Cinzel", serif;
-  color: #6b0f1a;
-  margin-bottom: 5px;
+/* ===============================
+   HERO
+================================= */
+
+.course-hero{
+
+    max-width:980px;
+    margin:auto;
+
+    text-align:center;
+
+    background:white;
+
+    padding:70px 60px;
+
+    border-radius:28px;
+
+    border:1px solid rgba(212,175,55,.35);
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.08);
 }
 
-.course-card h4 {
-  color: #8b5e3c;
-  margin-bottom: 15px;
-  font-size: 14px;
+.hero-badge{
+
+    display:inline-block;
+
+    background:#6b0f1a;
+
+    color:#fff;
+
+    padding:10px 24px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:28px;
 }
 
-.course-card p {
-  font-size: 14px;
-  color: #333;
-  margin-bottom: 10px;
+.course-hero h1{
+
+    font-family:"Cinzel",serif;
+
+    color:#6b0f1a;
+
+    font-size:60px;
+
+    margin-bottom:18px;
+
+    line-height:1.2;
 }
 
-/* DURATION */
-.duration {
-  font-weight: bold;
-  color: #6b0f1a;
+.course-hero h3{
+
+    font-family:"Cormorant Garamond",serif;
+
+    color:#9b7b2d;
+
+    font-size:32px;
+
+    font-weight:500;
+
+    margin-bottom:35px;
 }
 
-/* BUTTON */
-.course-card button {
-  margin-top: 10px;
-  padding: 10px 18px;
+.hero-divider{
 
-  background: #6b0f1a;
-  color: gold;
+    width:130px;
+    height:2px;
 
-  border: none;
-  border-radius: 20px;
+    background:#d4af37;
 
-  cursor: pointer;
-  font-weight: bold;
-
-  transition: 0.3s;
+    margin:30px auto;
 }
 
-.course-card button:hover {
-  background: #8b1e2d;
+.course-hero p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    font-size:22px;
+
+    line-height:1.9;
+
+    font-family:"Cormorant Garamond",serif;
+
+    color:#555;
 }
 
-/* ================= WHO SECTION ================= */
+/* ===============================
+   ABOUT
+================================= */
 
-.who-section {
-  margin-top: 60px;
-  background: #fff8f0;
-  padding: 30px;
-  border-radius: 16px;
-  border-top: 5px solid gold;
+.about-card{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:55px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.06);
+
+    border-left:6px solid #d4af37;
+
+    transition:.4s;
 }
 
-.who-section h2 {
-  font-family: "Cinzel", serif;
-  color: #6b0f1a;
-  margin-bottom: 25px;
+.about-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 22px 55px rgba(0,0,0,.09);
 }
 
-/* GRID */
-.who-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+.about-card p{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:24px;
+
+    line-height:2;
+
+    margin-bottom:24px;
+
+    color:#444;
 }
 
-/* CARD */
-.who-card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  border: 2px solid #6b0f1a;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.about-card strong{
+
+    color:#6b0f1a;
 }
 
-.who-card h4 {
-  color: #6b0f1a;
-  margin-bottom: 10px;
+/* ===============================
+   PHILOSOPHY
+================================= */
+
+.philosophy-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    max-width:1200px;
+
+    margin:auto;
 }
 
-.who-card p {
-  font-size: 14px;
-  color: #333;
+.philosophy-card{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:45px 35px;
+
+    text-align:center;
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+    border-top:5px solid #d4af37;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .courses-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.philosophy-card:hover{
 
-  .who-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 18px 45px rgba(0,0,0,.10);
 }
 
-@media (max-width: 500px) {
-  .courses-grid,
-  .who-grid {
-    grid-template-columns: 1fr;
-  }
+.philosophy-card h3{
+
+    font-family:"Cinzel",serif;
+
+    color:#6b0f1a;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+}
+
+.philosophy-card p{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:21px;
+
+    line-height:1.8;
+
+    color:#555;
+}
+
+/* ===========================================
+   LEARNING JOURNEY
+=========================================== */
+
+.learning-grid{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.learning-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    border:1px solid rgba(212,175,55,.35);
+
+    box-shadow:0 12px 28px rgba(0,0,0,.06);
+
+    transition:all .35s ease;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.learning-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:5px;
+
+    background:#d4af37;
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s;
+}
+
+.learning-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 22px 50px rgba(0,0,0,.12);
+}
+
+.learning-card:hover::before{
+
+    transform:scaleX(1);
+}
+
+.learning-card h3{
+
+    font-family:"Cinzel",serif;
+
+    color:#6b0f1a;
+
+    margin-bottom:18px;
+
+    font-size:22px;
+}
+
+.learning-card p{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:21px;
+
+    line-height:1.8;
+
+    color:#555;
+}
+
+/* ===========================================
+   CURRICULUM
+=========================================== */
+
+.curriculum-card{
+
+    max-width:950px;
+
+    margin:auto;
+
+    background:linear-gradient(
+    135deg,
+    #6b0f1a,
+    #842232);
+
+    color:white;
+
+    border-radius:30px;
+
+    padding:65px 55px;
+
+    text-align:center;
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.18);
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.curriculum-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    top:-120px;
+    right:-120px;
+}
+
+.curriculum-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:240px;
+    height:240px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.04);
+
+    bottom:-90px;
+    left:-90px;
+}
+
+.coming-tag{
+
+    display:inline-block;
+
+    background:gold;
+
+    color:#6b0f1a;
+
+    padding:10px 24px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    margin-bottom:25px;
+}
+
+.curriculum-card h2{
+
+    font-family:"Cinzel",serif;
+
+    font-size:40px;
+
+    margin-bottom:25px;
+}
+
+.curriculum-card p{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:22px;
+
+    line-height:2;
+
+    max-width:700px;
+
+    margin:20px auto;
+}
+
+/* ===========================================
+   QUOTE
+=========================================== */
+
+.quote-section{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:30px 20px;
+}
+
+.quote-section h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:42px;
+
+    font-style:italic;
+
+    color:#6b0f1a;
+
+    line-height:1.7;
+}
+
+.quote-section p{
+
+    margin-top:25px;
+
+    letter-spacing:3px;
+
+    color:#b38b2d;
+
+    font-family:"Cinzel",serif;
+}
+
+/* ===========================================
+   CTA
+=========================================== */
+
+.cta-section{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:65px;
+
+    border-radius:28px;
+
+    text-align:center;
+
+    border-top:6px solid gold;
+
+    box-shadow:
+    0 18px 45px rgba(0,0,0,.08);
+}
+
+.cta-section h2{
+
+    font-family:"Cinzel",serif;
+
+    color:#6b0f1a;
+
+    font-size:42px;
+
+    margin-bottom:22px;
+}
+
+.cta-section p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    font-size:22px;
+
+    line-height:1.9;
+
+    color:#555;
+
+    font-family:"Cormorant Garamond",serif;
+}
+
+.cta-section button{
+
+    margin-top:40px;
+
+    background:#6b0f1a;
+
+    color:gold;
+
+    border:none;
+
+    padding:16px 42px;
+
+    border-radius:50px;
+
+    font-size:17px;
+
+    font-family:"Cinzel",serif;
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.cta-section button:hover{
+
+    background:#8d1627;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(107,15,26,.25);
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:1000px){
+
+.philosophy-grid,
+.learning-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.course-hero h1{
+
+font-size:46px;
+
+}
+
+.course-hero h3{
+
+font-size:26px;
+
+}
+
+.section-heading h2{
+
+font-size:34px;
+
+}
+
+}
+
+@media(max-width:700px){
+
+.course-hero{
+
+padding:45px 25px;
+
+}
+
+.course-hero h1{
+
+font-size:36px;
+
+}
+
+.course-hero h3{
+
+font-size:22px;
+
+}
+
+.course-hero p{
+
+font-size:19px;
+
+}
+
+.about-card{
+
+padding:35px 25px;
+
+}
+
+.about-card p{
+
+font-size:20px;
+
+}
+
+.philosophy-grid,
+.learning-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.curriculum-card{
+
+padding:45px 25px;
+
+}
+
+.curriculum-card h2{
+
+font-size:30px;
+
+}
+
+.curriculum-card p{
+
+font-size:19px;
+
+}
+
+.quote-section h2{
+
+font-size:30px;
+
+}
+
+.cta-section{
+
+padding:45px 25px;
+
+}
+
+.cta-section h2{
+
+font-size:32px;
+
+}
+
+.cta-section p{
+
+font-size:19px;
+
+}
+
 }

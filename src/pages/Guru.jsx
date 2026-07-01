@@ -1,69 +1,181 @@
 import "./Guru.css";
+
 import guruImage from "../assets/Guru2.jpg";
 
-// Match EXACT file names from your folder
 import pose1 from "../assets/Pose1.jpg";
 import pose2 from "../assets/Pose2.jpg";
 import pose3 from "../assets/Pose3.jpg";
 
 function Guru() {
   return (
-    <div className="guru-page">
+    <section className="guru-page">
 
-      <h1 className="guru-title">Our Guru</h1>
+      {/* ================= HERO ================= */}
+
+      <div className="guru-hero">
+
+        <span className="guru-badge">
+          SHREE HANS NRITYA SADHANA GURUKUL
+        </span>
+
+        <h1 className="guru-title">
+          Our Guru
+        </h1>
+
+        <div className="gold-divider"></div>
+
+        <p className="guru-subtitle">
+          Dedicated to preserving the timeless tradition of Bharatanatyam
+          through authentic classical training rooted in the
+          Guru–Shishya Parampara.
+        </p>
+
+      </div>
+
+      {/* ================= MAIN SECTION ================= */}
 
       <div className="guru-card">
 
         {/* LEFT IMAGE */}
+
         <div className="guru-image">
-          <img src={guruImage} alt="Guru Puran Reezong Imsong" />
+
+          <img
+            src={guruImage}
+            alt="Guru Puran Reezong Imsong"
+          />
+
         </div>
 
-        {/* INFO */}
+        {/* RIGHT CONTENT */}
+
         <div className="guru-info">
-          <h2>Puran Reezong Imsong</h2>
-          <h3>Bharatanatyam Dancer</h3>
+
+          <h2>
+            Guru Puran Reezong Imsong
+          </h2>
+
+          <h3>
+            Bharatanatyam Artist & Classical Dance Educator
+          </h3>
+
+          <div className="info-divider"></div>
 
           <p>
-            Disciple of Karnataka Kalashree Guru Satyanarayana Raju, Bangalore.
+            Guru Puran Reezong Imsong is a dedicated Bharatanatyam
+            practitioner committed to preserving the authenticity,
+            discipline, and spiritual essence of Indian classical dance.
           </p>
 
           <p>
-            He has completed his Bharatanatyam training under his guru in South India,
-            following traditional classical techniques and disciplined practice.
+            He received his Bharatanatyam training under the guidance of
+            <strong> Karnataka Kalashree Guru Satyanarayana Raju</strong>,
+            Bengaluru, following the traditional Guru–Shishya Parampara,
+            where discipline, devotion, and continuous practice form the
+            foundation of learning.
           </p>
 
           <p>
-            He has extensive teaching experience in Namchi, Jorethang and other
-            regions of Sikkim.
+            With years of teaching experience across Namchi,
+            Jorethang, and other regions of Sikkim, he has trained
+            numerous students while nurturing confidence,
+            artistic excellence, and respect for India's cultural heritage.
           </p>
 
-          <p className="contact">📞 Contact: 9883683577</p>
-        </div>
+          <p>
+            Through Shree Hans Nritya Sadhana Gurukul, his vision is to
+            establish a centre dedicated exclusively to authentic
+            Bharatanatyam education, inspiring future generations to
+            appreciate and preserve this timeless classical tradition.
+          </p>
 
-        {/* RIGHT GALLERY */}
-        <div className="guru-gallery">
+          <div className="guru-contact">
 
-          <div className="gallery-item">
-            <img src={pose1} alt="Bharatanatyam pose" />
-            <p>CLASSICAL POSE 1</p>
-          </div>
+            <h4>Contact</h4>
 
-          <div className="gallery-item">
-            <img src={pose2} alt="Bharatanatyam pose" />
-            <p>CLASSICAL POSE 2</p>
-          </div>
+            <p>
+              +91 98836 83577
+            </p>
 
-          <div className="gallery-item">
-            <img src={pose3} alt="Bharatanatyam pose" />
-            <p>CLASSICAL POSE 3</p>
           </div>
 
         </div>
 
       </div>
 
-    </div>
+      {/* ================= GALLERY ================= */}
+
+      <section className="performance-section">
+
+        <div className="section-heading">
+
+          <h2>
+            Performance Gallery
+          </h2>
+
+          <div className="gold-divider"></div>
+
+          <p>
+            Moments from classical Bharatanatyam performances that
+            reflect grace, devotion, rhythm, and artistic expression.
+          </p>
+
+        </div>
+
+        <div className="gallery-grid">
+
+          <div className="gallery-large">
+            <img
+              src={pose1}
+              alt="Bharatanatyam Performance"
+            />
+          </div>
+
+          <div className="gallery-small">
+            <img
+              src={pose2}
+              alt="Bharatanatyam Performance"
+            />
+          </div>
+
+          <div className="gallery-small">
+            <img
+              src={pose3}
+              alt="Bharatanatyam Performance"
+            />
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ================= QUOTE ================= */}
+
+      <section className="guru-quote">
+
+        <h2>
+
+          यतो हस्तस्ततो दृष्टिः ।<br />
+
+          यतो दृष्टिस्ततो मनः ।<br />
+
+          यतो मनस्ततो भावः ।<br />
+
+          यतो भावस्ततो रसः ॥
+
+        </h2>
+
+        <p>
+
+          "Where the hands go, the eyes follow. Where the eyes go,
+          the mind follows. Where the mind goes, emotions arise.
+          Where emotions arise, aesthetic experience is born."
+
+        </p>
+
+      </section>
+
+    </section>
   );
 }
 

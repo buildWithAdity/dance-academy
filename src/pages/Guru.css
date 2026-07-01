@@ -1,97 +1,578 @@
-.guru-page {
-  padding: 40px;
-  background: #f7f5f2;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+/* ======================================
+   PAGE
+====================================== */
+
+.guru-page{
+    background:#f8f4ee;
+    padding:90px 25px;
+    color:#3b2b20;
 }
 
-/* TITLE */
-.guru-title {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #7a0c0c;
+/* ======================================
+   HERO
+====================================== */
+
+.guru-hero{
+    max-width:1000px;
+    margin:0 auto 80px;
+    text-align:center;
 }
 
-/* MAIN CARD */
-.guru-card {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
+.guru-badge{
+    display:inline-block;
+    padding:10px 28px;
+    border:1px solid #d4af37;
+    color:#6b0f1a;
+    background:#fffdf8;
+    font-family:"Cinzel",serif;
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
 }
 
-/* LEFT IMAGE */
-.guru-image {
-  flex: 1;
+.guru-title{
+    margin-top:28px;
+    font-family:"Cinzel",serif;
+    font-size:60px;
+    color:#6b0f1a;
+    letter-spacing:2px;
 }
 
-.guru-image img {
-  width: 100%;
-  border-radius: 12px;
+.gold-divider{
+    width:100px;
+    height:3px;
+    background:#d4af37;
+    margin:28px auto;
+    border-radius:30px;
 }
 
-/* INFO */
-.guru-info {
-  flex: 1.5;
+.guru-subtitle{
+    max-width:760px;
+    margin:auto;
+    font-family:"Cormorant Garamond",serif;
+    font-size:28px;
+    line-height:1.8;
+    color:#7a5d2e;
 }
 
-.guru-info h2 {
-  margin-bottom: 5px;
+/* ======================================
+   MAIN CARD
+====================================== */
+
+.guru-card{
+
+    max-width:1250px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:55px;
+
+    background:#fff;
+
+    border-radius:28px;
+
+    padding:45px;
+
+    border:1px solid rgba(212,175,55,.35);
+
+    box-shadow:
+    0 18px 45px rgba(0,0,0,.08);
 }
 
-.guru-info h3 {
-  color: #7a0c0c;
-  margin-bottom: 15px;
+/* ======================================
+   IMAGE
+====================================== */
+
+.guru-image{
+    display:flex;
+    align-items:flex-start;
 }
 
-.guru-info p {
-  margin-bottom: 10px;
-  line-height: 1.5;
+.guru-image img{
+
+    width:100%;
+
+    border-radius:24px;
+
+    border:5px solid #d4af37;
+
+    object-fit:cover;
+
+    box-shadow:
+    0 18px 35px rgba(0,0,0,.12);
+
+    transition:.45s;
 }
 
-.contact {
-  font-weight: bold;
+.guru-image img:hover{
+
+    transform:scale(1.02);
 }
 
-/* RIGHT GALLERY */
-.guru-gallery {
-  flex: 1.2;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  background: #ffffff;
-  padding: 15px;
-  border-radius: 12px;
+/* ======================================
+   INFORMATION
+====================================== */
+
+.guru-info{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
-/* GALLERY ITEMS */
-.gallery-item {
-  text-align: center;
+.guru-info h2{
+
+    font-family:"Cinzel",serif;
+
+    font-size:42px;
+
+    color:#6b0f1a;
+
+    margin-bottom:8px;
 }
 
-.gallery-item img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 2px solid #7a0c0c;
-  transition: transform 0.3s ease;
+.guru-info h3{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:30px;
+
+    font-weight:500;
+
+    color:#b48a2f;
+
+    margin-bottom:22px;
 }
 
-.gallery-item img:hover {
-  transform: scale(1.05);
+.info-divider{
+
+    width:80px;
+
+    height:2px;
+
+    background:#d4af37;
+
+    margin-bottom:28px;
 }
 
-.gallery-item p {
-  margin-top: 8px;
-  font-size: 12px;
-  font-weight: bold;
+.guru-info p{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:22px;
+
+    line-height:1.95;
+
+    color:#555;
+
+    margin-bottom:20px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .guru-card {
-    flex-direction: column;
-  }
+.guru-info strong{
 
-  .guru-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    color:#6b0f1a;
+
+    font-weight:600;
+}
+
+/* ======================================
+   CONTACT
+====================================== */
+
+.guru-contact{
+
+    margin-top:18px;
+
+    width:fit-content;
+
+    padding:20px 30px;
+
+    border-left:4px solid #d4af37;
+
+    background:#fffaf3;
+
+    border-radius:0 12px 12px 0;
+}
+
+.guru-contact h4{
+
+    font-family:"Cinzel",serif;
+
+    color:#6b0f1a;
+
+    margin-bottom:10px;
+
+    font-size:20px;
+}
+
+.guru-contact p{
+
+    margin:0;
+
+    color:#444;
+
+    font-size:21px;
+
+    font-weight:600;
+}
+
+/* ======================================
+   SECTION HEADING
+====================================== */
+
+.section-heading{
+    max-width:900px;
+    margin:90px auto 50px;
+    text-align:center;
+}
+
+.section-heading h2{
+    font-family:"Cinzel",serif;
+    font-size:42px;
+    color:#6b0f1a;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+.section-heading p{
+    margin:25px auto 0;
+    max-width:720px;
+    font-family:"Cormorant Garamond",serif;
+    font-size:24px;
+    line-height:1.8;
+    color:#666;
+}
+
+/* ======================================
+   PERFORMANCE GALLERY
+====================================== */
+
+.gallery-grid{
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    grid-template-rows:250px 250px;
+
+    gap:22px;
+}
+
+.gallery-large{
+
+    grid-row:1 / span 2;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    box-shadow:
+    0 18px 40px rgba(0,0,0,.12);
+}
+
+.gallery-small{
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    box-shadow:
+    0 18px 40px rgba(0,0,0,.10);
+}
+
+.gallery-large img,
+.gallery-small img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:24px;
+
+    transition:.5s ease;
+
+    border:3px solid #d4af37;
+}
+
+.gallery-large:hover img,
+.gallery-small:hover img{
+
+    transform:scale(1.06);
+}
+
+/* ======================================
+   SANSKRIT QUOTE
+====================================== */
+
+.guru-quote{
+
+    max-width:950px;
+
+    margin:100px auto 20px;
+
+    text-align:center;
+
+    padding:60px 40px;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    border-top:5px solid #d4af37;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+}
+
+.guru-quote h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:38px;
+
+    color:#6b0f1a;
+
+    line-height:2;
+
+    font-weight:600;
+}
+
+.guru-quote p{
+
+    margin-top:35px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:22px;
+
+    line-height:1.9;
+
+    color:#555;
+
+    max-width:760px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+}
+
+/* ======================================
+   HOVER EFFECTS
+====================================== */
+
+.guru-card,
+.gallery-large,
+.gallery-small,
+.guru-quote{
+
+    transition:.35s ease;
+}
+
+.guru-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 24px 55px rgba(0,0,0,.10);
+}
+
+.guru-quote:hover{
+
+    transform:translateY(-5px);
+}
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+@media(max-width:1100px){
+
+.guru-card{
+
+grid-template-columns:1fr;
+
+}
+
+.guru-image{
+
+justify-content:center;
+
+}
+
+.guru-image img{
+
+max-width:420px;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+grid-template-rows:auto;
+
+}
+
+.gallery-large{
+
+grid-row:auto;
+
+height:380px;
+
+}
+
+.gallery-small{
+
+height:260px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.guru-page{
+
+padding:60px 18px;
+
+}
+
+.guru-title{
+
+font-size:42px;
+
+}
+
+.guru-subtitle{
+
+font-size:22px;
+
+}
+
+.guru-card{
+
+padding:30px;
+
+gap:35px;
+
+}
+
+.guru-info h2{
+
+font-size:34px;
+
+}
+
+.guru-info h3{
+
+font-size:24px;
+
+}
+
+.guru-info p{
+
+font-size:20px;
+
+}
+
+.section-heading h2{
+
+font-size:34px;
+
+}
+
+.section-heading p{
+
+font-size:20px;
+
+}
+
+.gallery-large{
+
+height:300px;
+
+}
+
+.gallery-small{
+
+height:220px;
+
+}
+
+.guru-quote{
+
+padding:40px 25px;
+
+}
+
+.guru-quote h2{
+
+font-size:28px;
+
+line-height:1.8;
+
+}
+
+.guru-quote p{
+
+font-size:18px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.guru-title{
+
+font-size:34px;
+
+}
+
+.guru-subtitle{
+
+font-size:20px;
+
+}
+
+.guru-info h2{
+
+font-size:30px;
+
+}
+
+.guru-info h3{
+
+font-size:22px;
+
+}
+
+.guru-info p{
+
+font-size:18px;
+
+}
+
+.gallery-large{
+
+height:240px;
+
+}
+
+.gallery-small{
+
+height:180px;
+
+}
 }
